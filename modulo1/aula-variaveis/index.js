@@ -1,19 +1,4 @@
-// 13/04/2022.
-
-console.log(1 === 2);
-console.log(1 !== 2);
-
-
-
-
-
-
-
-
-
-
-
-/* primeiroValorDoUsuario = 0
+primeiroValorDoUsuario = 0
 segundoValorDoUsuario = 0
 valorCalculado = 0
 
@@ -29,7 +14,7 @@ valorCalculado = primeiroValorDoUsuario * segundoValorDoUsuario
 
 console.log("O primeiro número multiplicado pelo segundo resulta em:", valorCalculado)
 
-    ******************************************************
+/*    ******************************************************
     Resposta do restante dos exercícios:
     ******************************************************
 
