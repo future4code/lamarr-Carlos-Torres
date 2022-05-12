@@ -1,7 +1,24 @@
+
 // ATENÇÃO!!!
 //    -> NÃO COMENTE NENHUMA DAS FUNÇÕES DECLARADAS!!! 
 //    -> NÃO MODIFIQUE OS PARÂMETROS DAS FUNÇÕES!!! ()
 
+
+
+vteste = ""
+vteste = prompt("Veja se já selecionou uma área")
+
+if(vteste != "")
+{
+
+    addEventListener('pointerup', e => {
+    const selection = window.getSelection();
+  
+    console.log(selection)
+
+  })
+
+}
 
 // EXERCÍCIO 01
 function retornaTamanhoArray(array) {
@@ -22,6 +39,7 @@ function retornaTamanhoArray(array) {
     return arrayFinal
 }
 */ 
+
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
