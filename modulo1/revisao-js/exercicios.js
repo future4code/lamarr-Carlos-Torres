@@ -5,7 +5,7 @@
 
 
 
-vteste = ""
+/* vteste = ""
 vteste = prompt("Veja se já selecionou uma área")
 
 if(vteste != "")
@@ -18,7 +18,7 @@ if(vteste != "")
 
   })
 
-}
+} */
 
 // EXERCÍCIO 01
 function retornaTamanhoArray(array) {
@@ -206,18 +206,60 @@ function retornaNPrimeirosPares(n)
 }
 
 // EXERCÍCIO 09
-function classificaTriangulo(ladoA, ladoB, ladoC) {
+function classificaTriangulo(ladoA, ladoB, ladoC) 
+{
+
+    if (ladoA == ladoB && ladoA == ladoC && ladoC == ladoB)
+    {
+        return "Equilátero"
+    }
+
+    if ((ladoA == ladoB && ladoA != ladoC) || (ladoB == ladoC && ladoB != ladoA) || (ladoC == ladoA && ladoC != ladoB))
+    {
+        return "Isósceles"
+    }
+
+
+    if (ladoA != ladoB && ladoA != ladoC && ladoB != ladoC)
+    {
+        return "Escaleno"
+    }
 
 }
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+
+    varAuxiliar = 0
+
+    for(i=0; i<=array.length-1; i++)
+    {
+        for (j=1; j<=array.length-1; j++)
+        {            
+
+          if (Number(array[i]) > Number(array[j]))
+          {
+            varAuxiliar = array[i]
+            array[i] = array[j]
+            array[j] = varAuxiliar
+          }  
+
+        }
+    }
+    
+    var arrayFinal = [2]
+
+    arrayFinal[0] = array[array.length -2]
+    arrayFinal[1] = array[1]    
+
+    return arrayFinal
 }
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
    
+    return "Venha assistir ao filme " + filme.nome + ", de " + filme.ano.toString() + " dirigido por " + filme.diretor + " e estrelado por " + filme.atores[0] + ", " + filme.atores[1] + ", " + filme.atores[2] + ", " + filme.atores[3] + "."
+
 }
 
 // EXERCÍCIO 12
