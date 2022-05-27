@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+div{
+    background-color:rgb(43, 255, 0);
+    border:1px solid black;
+}
+
+.formatarfontesdapagina{
+    color:blue;
+    border: 1px dotted red;
+    text-align: center;
+}
+
+.formatarbarraalternativa{
+    background-color: rgb(111, 141, 141)  ;
+    color:black;
+    border: 1px dotted red;
+    text-align: center;
+}
+
+#formatacaodotitulo{
+    color:darkslategray;
+}
+
+h1,h2,h4,h6{
+
+    color:rgb(231, 135, 17);
+}
+
+h2.texto-com-background{
+    background-color: yellow;
+}
+
+h2.texto-com-background-com-outra-cor{
+    background-color: yellow;
+    color:green;
+}
+
+h3{
+
+    margin:10px;
+    color:rgb(62, 6, 107);
+}
+
+h4:hover{
+
+    margin:10px;
+    color:rgb(62, 6, 107);
+}
+
+h5:active{
+    size:20px;
+    color:rgb(15, 79, 139);
+}
+
+div{
+    text-align:center;
+    background-color: chartreuse;
+}
+
+.classformatogeral{
+    color:rgb(62, 6, 107);
+    border: 1px dotted black;
+}
