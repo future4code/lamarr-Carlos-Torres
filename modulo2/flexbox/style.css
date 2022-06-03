@@ -1,0 +1,83 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 200px;
+    align-items: center;
+}   
+
+*{
+    margin:0;
+    padding:0;
+}
+
+div{
+    background-color:rgb(140, 0, 255);
+    border:1px solid black;
+}
+
+.formatarfontesdapagina{
+    color:blue;
+    border: 1px dotted red;
+    text-align: center;
+}
+
+.formatarbarraalternativa{
+    background-color: rgba(253, 29, 167, 0.897)  ;
+    color:black;
+    border: 1px dotted red;
+    text-align: left;
+}
+
+#formatacaodotitulo{
+    color:darkslategray;
+}
+
+h1,h2,h4,h6{
+
+    color:rgb(231, 135, 17);
+}
+
+h2.texto-com-background{
+    background-color: rgb(140, 0, 255);
+}
+
+h2.texto-com-background-com-outra-cor{
+    background-color: rgb(140, 0, 255);
+    color:green;
+}
+
+h3{
+
+    margin:10px;
+    color:rgb(62, 6, 107);
+}
+
+h4:hover{
+
+    margin:10px;
+    color:rgb(62, 6, 107);
+}
+
+h5:active{
+
+    size:20px;
+    color:rgb(15, 79, 139);
+}
+
+div{
+    text-align:left;
+    background-color: rgb(140, 0, 255);
+}
+
+.classformatogeral{
+    color:rgb(62, 6, 107);
+    border: 1px dotted black;
+}
