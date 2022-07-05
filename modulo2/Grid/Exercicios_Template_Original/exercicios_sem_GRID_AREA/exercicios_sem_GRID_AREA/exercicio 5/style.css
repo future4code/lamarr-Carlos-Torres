@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+.div-pai{
+    display: grid;
+    grid-template-rows: auto 90vh 5vh;
+}
+
+header{
+    background: orange;
+    display: grid;
+    grid-template-columns:175px 1fr ;
+    justify-items: end;
+    align-items: center;
+}
+.imagem-logo{
+    width: 175px
+}
+button{
+    margin-right: 10px;
+    padding: 2px 5px 2px 5px;
+}
+
+
+.meio{
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr ;
+}
+
+.menu{
+    background: pink;
+}
+.principal{
+    background: rgb(251, 251, 162);
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    align-items:center ;
+    gap:5px;
+}
+
+.card{
+    background: rgb(182, 0, 30);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+}
+
+.img-card{
+    width: 100px;
+}
+.card h2{
+    font-size: 20px;
+}
+.rodape{
+    background: orange;   
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+.div-pai{
+    display: grid;
+    grid-template-rows: auto 90vh 5vh;
+}
+
+header{
+    background: orange;
+    display: grid;
+    grid-template-columns:175px 1fr ;
+    justify-items: end;
+    align-items: center;
+}
+.imagem-logo{
+    width: 175px
+}
+button{
+    margin-right: 10px;
+    padding: 2px 5px 2px 5px;
+}
+
+.principal{
+    background: rgb(251, 251, 162);
+}
+
+.rodape{
+    background: orange;   
+}

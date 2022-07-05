@@ -1,0 +1,45 @@
+footer,header,main,nav,article {
+    background: red;
+    text-align: center;
+    color:white;
+}
+
+.challenge{
+    display: grid;
+    grid-template-rows: 100px 200px 400px 100px;
+    grid-template-columns: repeat(3,1fr) 200px;
+
+    grid-template-areas: "head head head head"
+                         "b1 . b3 nav"
+                         "main main main nav"
+                         "foot foot foot foot";
+    gap: 30px;
+}
+
+header{
+    grid-area: head;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: foot;
+}
+
+nav{
+    grid-area:nav;
+}
+
+.small-box1{
+    grid-area: b1;
+}
+
+.small-box2{
+    grid-area: b2;
+}
+
+.small-box3{
+    grid-area: b3;
+}
