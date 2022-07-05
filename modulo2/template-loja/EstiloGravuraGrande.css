@@ -4,7 +4,7 @@
 }
 
 div{
-    background-color:rgb(140, 0, 255);
+    background-color:rgb(43, 255, 0);
     border:1px solid black;
 }
 
@@ -17,9 +17,7 @@ div{
 .formatarbarraalternativa{
     background-color: rgb(111, 141, 141)  ;
     color:black;
-    
     border: 1px dotted red;
-
     text-align: center;
 }
 
@@ -33,11 +31,11 @@ h1,h2,h4,h6{
 }
 
 h2.texto-com-background{
-    background-color: rgb(140, 0, 255);
+    background-color: yellow;
 }
 
 h2.texto-com-background-com-outra-cor{
-    background-color: rgb(140, 0, 255);
+    background-color: yellow;
     color:green;
 }
 
@@ -50,25 +48,20 @@ h3{
 h4:hover{
 
     margin:10px;
-   color:rgb(62, 6, 107);
-
+    color:rgb(62, 6, 107);
 }
 
 h5:active{
-
     size:20px;
     color:rgb(15, 79, 139);
 }
 
 div{
     text-align:center;
-   background-color: rgb(140, 0, 255);
-
+    background-color: chartreuse;
 }
 
-
 .classformatogeral{
- color:rgb(62, 6, 107);
-
+    color:rgb(62, 6, 107);
     border: 1px dotted black;
 }
