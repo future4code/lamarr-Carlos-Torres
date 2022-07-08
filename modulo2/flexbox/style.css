@@ -1,3 +1,18 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 200px;
+    align-items: center;
+}   
+
 *{
     margin:0;
     padding:0;
@@ -15,11 +30,10 @@ div{
 }
 
 .formatarbarraalternativa{
-    background-color: rgb(111, 141, 141)  ;
+    background-color: rgba(253, 29, 167, 0.897)  ;
     color:black;
-    border: 1px dotted rgb(146, 96, 96);
-
-    text-align: center;
+    border: 1px dotted red;
+    text-align: left;
 }
 
 #formatacaodotitulo{
@@ -59,10 +73,9 @@ h5:active{
 }
 
 div{
-    text-align:center;
+    text-align:left;
     background-color: rgb(140, 0, 255);
 }
-
 
 .classformatogeral{
     color:rgb(62, 6, 107);
