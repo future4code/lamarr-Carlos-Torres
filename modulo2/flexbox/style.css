@@ -1,3 +1,18 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 200px;
+    align-items: center;
+}   
+
 *{
     margin:0;
     padding:0;
@@ -15,9 +30,10 @@ div{
 }
 
 .formatarbarraalternativa{
-    background-color: rgb(111, 141, 141)  ;
+    background-color: rgba(253, 29, 167, 0.897)  ;
     color:black;
-
+    border: 1px dotted red;
+    text-align: left;
 }
 
 #formatacaodotitulo{
@@ -47,10 +63,21 @@ h3{
 h4:hover{
 
     margin:10px;
+    color:rgb(62, 6, 107);
 }
 
 h5:active{
 
     size:20px;
     color:rgb(15, 79, 139);
+}
+
+div{
+    text-align:left;
+    background-color: rgb(140, 0, 255);
+}
+
+.classformatogeral{
+    color:rgb(62, 6, 107);
+    border: 1px dotted black;
 }
