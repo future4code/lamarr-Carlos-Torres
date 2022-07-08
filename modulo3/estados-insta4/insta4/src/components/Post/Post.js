@@ -35,9 +35,11 @@ function Post(props)
       componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario}/>
     }
     console.log(comentando)
+
   }
   
   const aoEnviarComentario = () => {
+    alert("Enviou!")
     setComentando(false)
     setNumeroComentarios(numeroComentarios + 1)
   }
@@ -51,6 +53,8 @@ function Post(props)
     }
 
     let componenteComentario
+
+    alert(comentando)
 
     if(comentando) {
       componenteComentario = <SecaoComentario aoEnviar={aoEnviarComentario}/>
@@ -81,7 +85,9 @@ function Post(props)
           valorContador={numeroComentarios}
         />
       </div>
+
       {componenteComentario}
+
     </div>
   )
 
