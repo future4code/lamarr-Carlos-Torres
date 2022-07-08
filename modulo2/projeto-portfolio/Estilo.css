@@ -17,9 +17,7 @@ div{
 .formatarbarraalternativa{
     background-color: rgb(111, 141, 141)  ;
     color:black;
-    
     border: 1px dotted red;
-
     text-align: center;
 }
 
@@ -51,7 +49,6 @@ h4:hover{
 
     margin:10px;
    color:rgb(62, 6, 107);
-
 }
 
 h5:active{
@@ -65,7 +62,6 @@ div{
    background-color: rgb(140, 0, 255);
 
 }
-
 
 .classformatogeral{
  color:rgb(62, 6, 107);
