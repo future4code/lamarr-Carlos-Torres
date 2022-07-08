@@ -2,6 +2,27 @@ import React from 'react';
 import Post from './components/Post/Post';
 import './style.css'
 
+
+<ContainerTextoDigitado>
+  Nome do usuário:
+  <input className='InputNomeUsuario'
+  /> 
+
+  Foto do usuário:
+  <input className='InputComentario'
+  /> 
+
+  Imagem do post:
+  <input className='InputComentario'
+  /> 
+
+  <button>
+    Enviar
+  </button>
+
+</ContainerTextoDigitado>
+
+
 function App() {
 return(
   <div className='MainContainer'>
