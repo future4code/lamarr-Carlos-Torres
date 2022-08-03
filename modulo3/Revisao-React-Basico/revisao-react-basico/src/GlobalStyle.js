@@ -1,4 +1,3 @@
-import {CreateGlobalStyle} from 'styled-component'
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
@@ -25,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     body{
         font-family: 'Rajdhani', sans-serif;
         background: var(--deep-blue);
-        color: var(soft-white);
+        color: var(--soft-white);
     }
 
     *{

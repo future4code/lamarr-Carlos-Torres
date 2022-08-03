@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
-export const HomePageContainer = styled.div`
+const HomePageContainer = styled.div`
+
     main{
 
             display: flex;
@@ -8,6 +9,11 @@ export const HomePageContainer = styled.div`
             justify-content: center;
             align-items: center;
 
+            padding: 1 rem;
+
     }
 
+
+
 `
+export default HomePageContainer;
