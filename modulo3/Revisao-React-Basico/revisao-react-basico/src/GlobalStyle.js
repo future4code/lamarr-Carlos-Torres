@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
     :root {
+
         --soft-white: #f2f2f2;
         --green: #8bcf21;
         --yellow: #Ffcb16;
@@ -23,15 +24,18 @@ export const GlobalStyle = createGlobalStyle`
 
     body{
         font-family: 'Rajdhani', sans-serif;
+        
         background: var(--deep-blue);
+
+        background: deep-blue;
+
         color: var(--soft-white);
     }
 
     *{
         margin:0;
         padding:0;
-        border-sizing: border-box;
-
+        box-sizing:border-box;
     }
 
 `

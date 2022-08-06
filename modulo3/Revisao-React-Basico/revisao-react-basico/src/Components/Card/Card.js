@@ -1,19 +1,24 @@
+
 import { CardContainer } from "./styles";
 
-function Card(){
+function Card(props){
+
+    console.log(props)
+
+    const {image, name, species} = props;
+
     return (
 
             <CardContainer>
 
-                <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"> </img>
+                <img src={image} alt={name}/>
 
-                <h2> Nome </h2>
+                <h2> {name} </h2>
                 
-                <p> Descrição </p>
+                <p> {species} </p>
 
             </CardContainer>
     
         )
 }
-
 export default Card;
