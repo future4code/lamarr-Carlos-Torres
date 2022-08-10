@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luminus geradores</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+<body>
+
+    
+    <header>
+        <img class="logoTopo" src="./img/Especialistas2.png" alt="logo Luminus eletricidade">
+        <a href="./pagina-principal.html" > </a>
+    </header>
+
+
+    <main>            
+           
+        <nav class="quemSomos">  
+
+            <h3 class="tituloQuemSomos">Lista de clientes</h3>
+            <h4 class=" subtituloQuemSomos"> Agendamentos de manutenção </h4>
+            <div class="textoQuemSomos">
+                <p> Nesta área, fazemos os acompanhamento de manutenção para cada cliente </p>       
+            </div> 
+
+        </nav>    
+
+        <br>
+    
+        <Center>
+        <div class="servicos">
+       
+            <section>
+                <div class="cardServicos">
+                    
+                    <?php
+
+                        /* Vai buscar na base o último registro para aquela máquina
+                           que não tenha sido resolvido = 0 (o false) e a data de previsão 
+                           já esteja menor que a data atual (do sistema). Nesse caso, 
+                           coloco a animação de uma lâmpada vermelha. */
+
+                        $VCDMaquina = "JA-03/165"
+                        SQL = "Select DTPrevisaoAtendimento from PREVISOES_ATENDIMENTOS "
+                        SQL = SQL & "Where CDMaquina = '" & VCDMaquina & "' "
+                        SQL = SQL & "And Not CDResolvido "
+                        SQL = SQL & "And DTPrevisaoAtendimento <= " & Date() & "
+
+                        If (True)   /* Se encontrar na base de dados */
+                        { 
+
+                    ?>
+                        <img class="imagemCard" src="img/LogoLuminusTrabalhadoLampadaVermelha.png" alt="Perfi">
+                    <?php
+
+                    }
+
+                    else
+
+                    {
+
+                    ?>
+                        <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="Perfi">                        
+                    <?php
+
+                    }
+
+                    ?>
+
+                    <h4> JA-03/165 - AÇÃO... </h4>
+                </div>
+
+            </section>
+                
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="Perfi">
+                    <h4 class="tituloCard"> 55-001 - GRUPO C... </h4>     
+                </div>
+            </section>
+        
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="agenda">
+                    <h4 class="tituloCard"> JA-04/218 - LUMINUS... </h4>     
+                </div>
+            </section>
+
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="agenda">
+                    <h4 class="tituloCard"> 220-005 - CONSPI... </h4>     
+                </div>
+            </section>
+
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="agenda">
+                    <h4 class="tituloCard"> FIOTEC_181-001 - FIOTEC </h4>     
+                </div>
+            </section>
+
+        </div>     
+        </Center>
+
+
+        <!-- Aqui mais uma lista com mais 3 clientes -->
+
+        <center>
+        <div class="servicos">
+           
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="cadeado">
+                    <h4 class="tituloCard"> 550-001 - HEAPN </h4>     
+                </div>
+            </section>
+                      
+            <section>
+                <div class="cardServicosAtrasados">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhadoLampadaVermelha.png" alt="Perfi">
+                    <h4> 656-001 - Andrea... </h4>
+                    <h7> Preventiva 250h 15-07-2027 </h7>
+                </div>
+            </section>
+            
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="agenda">
+                    <h4> SUBMG-1000-002/GMG2 - HEAPN </h4>     
+                </div>
+            </section>
+    
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="cadeado">
+                    <h4> 220-003 - WPF 1 - CASA DE SAÚDE </h4>     
+                </div>
+            </section>
+    
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="cadeado">
+                    <h4> 115-001 - WPF 4 - MATER. SEROPÉDICA </h4>     
+                </div>
+            </section>
+    
+        </div>     
+        </center>
+    
+        <!-- Aqui mais uma lista com mais 3 clientes -->
+    
+        <br>
+        <Center>
+        <div class="servicos">
+       
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="cadeado">
+                    <h4> RIVIERA_145-001 - RIVIERA... </h4>     
+                </div>
+            </section>
+                  
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="Perfi">
+                    <h4> RIVIERA_40-001 - RIVIERA... </h4>     
+                </div>
+            </section>
+        
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="agenda">
+                    <h4> 220-004 -  UPA 24H MAGALHÃES BASTOS </h4>     
+                </div>
+            </section>
+
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="agenda">
+                    <h4> ALE_230-001 - ALESAT COMBUSTIVEIS S.A </h4>     
+                </div>
+            </section>
+
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="agenda">
+                    <h4> HGB_450-004 - W A SIQUEIRA - HFB </h4>     
+                </div>
+            </section>
+
+        </div>     
+        </Center>
+
+        <!-- Aqui mais uma lista com mais 3 clientes -->
+    
+        <br>
+        <Center>
+        <div class="servicos">
+       
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="cadeado">
+                    <h4> WL_120-001 - WL DISTRIBUIDORA </h4>     
+                </div>
+            </section>
+                  
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="Perfi">
+                    <h4> IREP_450-001 - IREP - NOKIA  </h4>     
+                </div>
+            </section>
+        
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="agenda">
+                    <h4> 220-001 - COLÉGIO DO... </h4>     
+                </div>
+            </section>
+
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="agenda">
+                    <h4> 220-002 - COLÉGIO DO... </h4>     
+                </div>
+            </section>
+
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="agenda">
+                    <h4> 25-001 - BELIZ... </h4>     
+                </div>
+            </section>
+
+        </div>     
+        </Center>
+
+
+        <!-- Aqui mais uma lista com mais 3 clientes -->
+    
+        <br>
+        <Center>
+        <div class="servicos">
+       
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="cadeado">
+                    <h4> TB_500-001 - TB FOR... </h4>     
+                </div>
+            </section>
+                  
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="Perfi">
+                    <h4> 220-007 - TUPP... </h4>     
+                    </p> 
+                </div>
+            </section>
+        
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="agenda">
+                    <h4> 230-002 - PREFEITURA DE JAPERI </h4>     
+                    </p> 
+                </div>
+            </section>
+
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="agenda">
+                    <h4> MM_125-001 - MEIO DO MATO </h4>     
+                    </p> 
+                </div>
+            </section>
+
+            <section>
+                <div class="cardServicos">
+                    <img class="imagemCard" src="img/LogoLuminusTrabalhado.png" alt="agenda">
+                    <h4> JD_125-001 - GALERI... </h4>     
+                    </p> 
+                </div>
+            </section>
+
+        </div>     
+        </Center>
+
+
+    </main>
+
+    <br>
+
+    <center>
+        <footer class="rodape">
+    
+            <p id="formatacaodotitulo">            
+                <a target="blank" href="https://www.linkedin.com">
+                <img class="icone" src="images/LinkedInUp4.png"/>
+    
+                <a target="blank" href="https://www.facebook.com">
+                <img class="icone" src="images/FacebookUp4.png"/>
+    
+                <a target="blank" href="https://www.twitter.com">
+                <img class="icone" src="Images/TwitterUp4.png"/>
+    
+                <a target="blank" href="https://www.instagram.com">
+                <img class="icone" src="Images/InstagramUp4.png"/>
+    
+                <a target="blank" href="https://www.youtube.com">
+                <img class="icone" src="Images/YouTubeUp4.png"/>
+    
+                <a target="blank" href="https://www.Tiktok.com">
+                <img class="icone" src="Images/TikTokUp4.png"/>        
+            </p>
+    
+            <p> Luminus Eletricidade, Geradores e Serviços Eireli | CNPJ: 01.773.012/0001-11 | Estrada da Ilha, 
+            <br>
+                1681 - Guaratiba, Rio de Janeiro, 23020-230| Rio de Janeiro | RJ | CEP: 23020-230.
+            </p>
+
+        </footer>
+    </center>    
+
+</body>
+
+</html>

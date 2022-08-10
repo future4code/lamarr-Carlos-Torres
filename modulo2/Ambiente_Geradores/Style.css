@@ -1,0 +1,181 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  header{
+    background-color: #1f1497;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  
+  
+  .Button-Topo{
+    height: 60px;
+    width: 140px;
+    border-radius: 20px;
+    border-color: white;
+    background-color: rgb(210, 194, 176);
+    color: black;
+    font-style: italic;
+    font-size: medium;
+  
+  }
+  
+  .logoTopo{
+  }
+  
+  
+  .quemSomos{
+   
+    height: 100px;
+    background-color: #f2f2f2;
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+    }
+  .tituloQuemSomos{
+      font-size: 40px;
+  }
+  .subtituloQuemSomos{
+      font-size: 15px;
+      
+  }
+  .textoQuemSomos{
+      padding-top: 10px;
+      font-size: 20px;
+      text-align: center;
+      padding-bottom:10px ;
+      
+  }
+  .botaoQuemSomos{
+    display: flex;
+    background-color: #f2f2f2;
+  
+    flex-direction: column;
+    align-items: end;
+    padding-right: 100px;
+    padding-bottom: 30px;
+  }
+   
+  .botaoAjustado{
+    font-size: 20px;
+    padding: 2px 15px 2px 15px;
+    border-radius: 5px;
+    background-color:#D2C2B0  ;
+   
+  }
+  .servicos{
+      display: flex;
+      padding: 0px 60px 0px 60px;
+      justify-content: space-evenly;
+      background-color: white;
+      
+      
+  }
+
+  .cardServicos{
+     background-color: #D2C2B0;
+     width: 200px;
+     height: 100px;
+     padding: 20px;
+     text-align: center;
+     color: #1f1f24 ;
+     box-shadow: 0 0 1em rgb(35, 194, 56);
+  }
+
+  .cardServicosAtrasados{
+    background-color: #D2C2B0;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    color: #1f1f24 ;
+    box-shadow: 0 0 1em rgb(194, 40, 35);
+ }
+  
+  .tituloCard{
+    padding: 15px;
+    font-size: 20px;
+  }
+  
+  .imagemCard{
+      height: 100px;
+  }
+  .empRapido{ 
+    
+    background-color: #f2f2f2 ;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .empTitulo{
+    padding-top: 40px;
+    font-size: 50px;
+  }
+  .empText{
+    width: 600px;
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom:10px ;
+    
+  }
+  
+  .cards{
+    display: flex;
+  }
+  
+  .cardSimulaEmp{
+    
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+    text-align: center;
+  }
+  .botaoSimular{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    padding: 2px 15px 2px 15px;
+    border-radius: 50px;
+     
+  }
+  
+  .main-perguntas{
+    background-color: white;
+    
+  }
+  
+  #h1-perguntas{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .perguntas{
+    background-color: rgb(210, 194, 176);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+   border: solid ;
+  }
+  
+  .icone{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .rodape{
+    justify-content: center;
+    background: rgb(205, 184, 206);
+  }
