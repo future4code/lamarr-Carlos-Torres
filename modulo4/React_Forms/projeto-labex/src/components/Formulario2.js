@@ -1,4 +1,4 @@
-//import React from "react";
+import React from "react";
 import axios from "axios"
 import { useState } from "react"
 import  {useForm}  from "./hooks/useForm";
@@ -7,8 +7,7 @@ export function Formulario2() {
     //const [email, setEmail] = useState("")
     //const [senha, setSenha] = useState("")
     //const [form, setForm] = useState({email: "", senha: ""})
-    const [form, onChange] = useForm({email: "", password: ""})
-    console.log ({email: "", senha: ""})
+    const [form, onChange, clear] = useForm({email: "", password: ""})
 
     /*const mudaEmail = (event) => {
         setForm({...form, email: event.target.value})
@@ -39,12 +38,25 @@ export function Formulario2() {
 
 
     const fazerLogin = (event) => {
+        //alert("Odeio rejex")
+
         event.preventdefault()  //Pra não recarregar a página antes da requisição.
-        axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/carlos-torres-lamarr/login", 
+        /*axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/carlos-torres-lamarr/login", 
+        form)*/
+
+        /*axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/:aluno/login", 
+        form)*/
+
+        axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/astrodev@gmail.com", 
         form)
+
         .then ((response)=> console.log(response.data))
         .catch ((error) => console.log(error.message))
-        console.log(form)
+
+        clear();
+        
+        //console.log(form)
+
     }
    
     return (

@@ -1,8 +1,6 @@
 import axios from "axios"
 import { useState } from "react"
 
-
-
 export function Formulario1() {
     const [email, setEmail] = useState("")
     const [senha, setSenha] = useState("")
@@ -22,7 +20,7 @@ export function Formulario1() {
     }
 
     const fazerLogin = () => {
-        //axios.post(url, body, headers)
+        axios.post(url, body, headers)
         console.log(body)
     }
    
