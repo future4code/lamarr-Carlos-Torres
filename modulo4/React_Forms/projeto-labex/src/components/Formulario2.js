@@ -47,7 +47,7 @@ export function Formulario2() {
         /*axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/:aluno/login", 
         form)*/
 
-        axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/astrodev@gmail.com", 
+        axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/darvas", 
         form)
 
         .then ((response)=> console.log(response.data))
