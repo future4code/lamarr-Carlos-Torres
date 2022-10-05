@@ -9,7 +9,7 @@ const PageHome=()=>{
     }
 
     const PageListaViagens=()=>{
-        navigate("/ListaDeViagens")
+        navigate("/PageListaViagens")
     }
 
     return(
