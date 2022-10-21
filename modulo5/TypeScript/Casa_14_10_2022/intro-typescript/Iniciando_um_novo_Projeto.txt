@@ -1,0 +1,21 @@
+npm install -g typescript	
+npm i -g typescript
+
+npm init -y
+
+npm i typescript -D	
+
+tsc -v    -> Mostra a versão do typescript instalado na máquina.
+
+Criando o arquivo de configuração tsconfig.json
+
+npx tsc --init
+
+Para criar o arquivo .ts (typescript), crie pelo editro do Visual Studio: index.ts
+
+traspilando o seu arquivo index.ts para gerar o index.js
+
+	tsc <Enter>
+
+compiando o index.js gerado: node index.js 	<Enter>
+
