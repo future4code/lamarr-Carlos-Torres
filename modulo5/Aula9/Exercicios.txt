@@ -1,0 +1,288 @@
+
+
+1 - Os campos do tipo DATE são fomma de declarar campos tipo data;
+    Os campos tipo VARCHAR são frma de declarar campos que precisam 
+    de valors string que armazenem até 6 caracteres.
+
+2 - Show databases serve para mostrar os bancos de dados que usamos no projeto
+
+3 - Show tables serve para mostrar as tabelas da base de dados.
+
+4 - Após o uso do comendo DESCRIME ACTOR, tive detalhes da estrutura da base de dados.
+
+5 - 
+
+	INSERT INTO Actor (id, name, salary)
+	VALUES(
+	  "002", 
+	  "Gloria Pires",
+	  1200000,
+	  "1963-08-23", 
+	  "male"
+	);
+	
+6 - Uma nova query com o ID = 02 gerou erro de duplicidade de dados (violei a chave promária).
+
+7 - A query a seguir não possui todos os campos para completar a adição de dados. A query D 
+não está com àspas envolvendo o valor que entrará em salário. A query E não possui as áspas 
+que envolvem os campos salário e data de nascimento
+
+	c)
+
+	INSERT INTO Actor (id, name, salary)
+	VALUES(
+	  "003", 
+	  "Fernanda Montenegro",
+	  300000,
+	  "1929-10-19", 
+	  "female"
+	);	
+
+	d)
+
+	INSERT INTO Actor (id, salary, birth_date, gender)
+	VALUES(
+	  "004",
+	  400000,
+	  "1949-04-18", 
+	  "male"
+	);
+
+
+	e)
+
+	INSERT INTO Actor (id, name, salary, birth_date, gender)
+	VALUES(
+	  "003", 
+	  "Fernanda Montenegro",
+	  300000,
+	  "1929-10-19", 
+	  "female"
+	);
+
+	INSERT INTO Actor (id, name, salary, birth_date, gender)
+	VALUES(
+	  "007",
+	  "Milla Jovovich",  
+	  1700000,
+	  "1975-12-17", 
+	  "male"
+	);
+
+
+Exercício 8
+
+	SELECT * FROM Actor
+	SELECT id, salary from Actor 
+	SELECT id, name from Actor WHERE gender = "male"
+
+	a)
+		SELECT id, name from Actor WHERE gender = "female"
+
+
+	b)
+		SELECT * from Actor WHERE name = "Tony Ramos"
+
+	c)
+		SELECT * from Actor WHERE gender is "invalid"
+
+	d) 	
+		SELECT id, name, salary from Actor WHERE salary <= 500000
+
+
+SELECT id, nome from Actor WHERE id = "002"
+
+	Na query anterior, o nome correto para a tabela é NAME ao invés de NOME.
+
+
+Exercicio 9
+
+	a)
+
+	SELECT * FROM Actor
+	WHERE (name LIKE "A%" OR name LIKE "J%") AND salary > 300000
+	//  Essa query retornou as linhas de registro correspodentes aos nomes na tabela 
+	//que começaram com A ou com J e o salário maior que 300000.
+
+	b)
+
+	c)
+
+	SELECT * FROM Actor
+	WHERE (name LIKE "%G%" and name LIKE "%g%") AND salary between 350000 and 900000
+
+
+Exercicio 10
+
+CREATE TABLE Pessoas (
+	id INT PRIMARY KEY NOT NULL auto_increment,
+    nome VARCHAR(150) NOT NULL,
+    email VARCHAR(120) NOT NULL,
+    idade INT DEFAULT 18
+    )
+    
+    insert into pessoas (id, nome, email, idade) values (1, "Carlos Torres", "crftorres@hotmail.com", 32)
+    
+    use `jbl-4416666-carlos-torres`
+    show databases
+    show tables
+    CREATE TABLE Actor (
+    id VARCHAR(255) PRIMARY KEY,
+    name VARCHAR (255) NOT NULL,
+    salary FLOAT NOT NULL,
+    birth_date DATE NOT NULL,
+    gender VARCHAR(6) NOT NULL
+);
+
+INSERT INTO Actor (id, name, salary)
+VALUES(
+  "002", 
+  "Gloria Pires",
+  1200000,
+  "1963-08-23", 
+  "male"
+);
+
+INSERT INTO Actor (id, name, salary, birth_date, gender)
+VALUES(
+  "003", 
+  "Fernanda Montenegro",
+  300000,
+  "1929-10-19", 
+  "female"
+);
+
+/* O campo nome na query anterior não possui um valor e na criação da tabela foi definido como não nulo. */
+
+INSERT INTO Actor (id, name, salary, birth_date, gender)
+VALUES(
+  "007",
+  "Milla Jovovich",  
+  1700000,
+  "1975-12-17", 
+  "male"
+);
+
+
+/* O campo data de aniversário não possuia áspas. */
+
+use jbl-4416666-carlos-torres
+select id, name, salary from Actor
+
+SELECT id, name from Actor WHERE gender = "female"
+SELECT * from Actor WHERE name = "Tony Ramos"
+SELECT * from Actor WHERE gender is "invalid"
+
+SELECT id, name, salary from Actor WHERE salary <= 500000
+// Na query por um erro de digitação, o campo não era nome e sim, name.
+
+a)
+	SELECT * FROM Actor
+	WHERE (name LIKE "A%" OR name LIKE "J%") AND salary > 300000
+	//  Essa query retornou as linhas de registro correspodentes aos nomes na tabela 
+	//que começaram com A ou com J e o salário maior que 300000.
+
+	SELECT * FROM Actor
+	WHERE (name LIKE "%G%" and name LIKE "%g%") AND salary between 350000 and 900000
+
+
+describe Actor
+
+
+CREATE TABLE Filmes (
+	id INT PRIMARY KEY NOT NULL auto_increment,
+    nome VARCHAR(150) NOT NULL,
+    sinopse TEXT NOT NULL,
+    data_lancamento DATE NOT NULL,
+    avaliacao Varchar(20) NOT NULL
+    )
+
+
+INSERT INTO Filmes (id, nome, sinopse, data_lancamento, avaliacao)
+VALUES(
+  "007",
+  "ORFEU",
+  "Orfeu (Toni Garrido) é um popular compositor de uma escola de samba carioca. Residente de uma favela, ele se apaixona perdidamente quando conhece a bela Eurídice (Patrícia França), uma mulher que acaba de se mudar para o local. Mas entre eles existe ainda Lucinho (Murilo Benício), chefe do tráfico local, que irá modificar drasticamente a vida de ambos.",
+  "1999-04-21",
+  "8"
+);
+
+
+
+
+
+
+
+AULA 11 - 
+
+  Lembre-se que para os exercícios de UPDATE e DELETE, o SQL exige que você desative os Safe 
+Updates. Para fazer isso, rode o seguinte comando no seu Workbench: `SET SQL_SAFE_UPDATES = 0;`
+
+RENAME TABLE Filmes to Movie
+
+
+
+
+a)
+
+```sql
+ALTER TABLE Actor DROP COLUMN salary;
+```
+	Este comando altera a tabela Actor apagando o campo salary.
+
+b)
+
+```sql
+ALTER TABLE Actor CHANGE gender sex VARCHAR(6);
+```
+
+	Este comando altera a tabela Actor alterando o campo gender por sex VARCHAR(6)
+
+c)
+
+```sql
+ALTER TABLE Actor CHANGE gender gender VARCHAR(255);
+```
+
+	Este comando altera a tabela Actor trocando a "estrutura" do campo gender para o tipo VARCHAR(255) (tamanho 255).
+d)
+
+```sql
+ALTER TABLE Actor CHANGE gender gender VARCHAR(100);
+```
+
+
+EXERCÍCIO 2
+
+a)
+
+	UPDATE Actor
+	SET 
+		name = "Moacyr Franco",
+		birth_date = "1973-11-09"
+	WHERE id = "003";
+	
+b)	
+
+	Update Actor set name = 'JULIANA PAES' where id = '005'
+	Update Actor set name = 'Juliana Paes' where id = '005'
+
+c)
+	Select * from Actor
+	UPDATE Actor
+	SET 
+	name = "Moacyr Franco",
+	birth_date = "2020-02-10",
+	salary = 600000,
+	gender = "male"
+	WHERE id = "005";		
+
+
+Exercício 3
+
+a)
+	DELETE FROM Actor WHERE name = "Fernanda Montenegro"
+	//Usando o save update mode
+
+b) 
+	
