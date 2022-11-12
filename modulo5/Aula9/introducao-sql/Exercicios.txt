@@ -1,4 +1,9 @@
 
+https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open
+
+https://dillinger.io/
+
+
 
 1 - Os campos do tipo DATE são fomma de declarar campos tipo data;
     Os campos tipo VARCHAR são frma de declarar campos que precisam 
