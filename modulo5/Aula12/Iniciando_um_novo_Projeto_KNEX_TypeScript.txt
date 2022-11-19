@@ -1,0 +1,20 @@
+npm init -y
+
+npm install typescript -D	
+
+tsc -v    -> Mostra a versão do typescript instalado na máquina.
+
+Criando o arquivo de configuração tsconfig.json
+
+npx tsc --init   (COPIA LOGO UM TSCONFIG.JSON PRONTO)
+
+Para criar o arquivo .ts (typescript), crie pelo editro do Visual Studio: index.ts
+
+traspilando o seu arquivo index.ts para gerar o index.js
+
+	tsc <Enter>
+
+compiando o index.js gerado: node index.js 	<Enter>
+
+npm install knex mysql <Enter>
+

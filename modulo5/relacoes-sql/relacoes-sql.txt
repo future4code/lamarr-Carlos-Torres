@@ -1,0 +1,53 @@
+
+use `jbl-4416666-carlos-torres`
+select * from Filmes
+show databases
+show tables
+drop table Movie
+select * from Movies
+describe Movies
+
+```Criando uma tabela para cadastrar avaliações sobre os filmes
+CREATE TABLE Rating (
+	id VARCHAR(255) PRIMARY KEY,
+	comment TEXT NOT NULL,
+	rate FLOAT NOT NULL,
+	movie_id int,
+	FOREIGN KEY (movie_id) REFERENCES Movies(id)
+)
+
+``` 1 -
+*a) Explique o que é uma chave estrangeira*
+		``` Uma chave estrangeira serve para auxiliar na ligação (gerar uma referência) em relação à outra tabela
+        ``` são entidades diferentes, mas que se complementam. 
+        ``` Ex.: 1 funcionário está na tebale de colaboradores, mas seus dependentes está na tabela de dependentes.
+        ``` isso gera uma relação de 1 para N (não se pode determinar quantos filhos ele tenha). Essa chave estrangeira 
+        ``` ajudará na busca de todos os seus dependentes independente da quantidade.
+        
+INSERT INTO Rating (id, comment, rate, movie_id)
+VALUES(
+  "9",
+  "Mostra a realidade do RJ (perigo; cobiça e corrupção)!",
+  "70",
+  "006"
+);
+
+*c) Tente criar uma avaliação para um filme que não existe (ou seja, um id inválido). Anote e explique o 
+	resultado da query.* 
+    
+                Ocorreu um erro de FOREIGN KEY CONSTRAINT - Foi criada uma referência (ligação 
+				entre as 2 tabelas). Para que se dê uma avaliação, é necessário que na tabela 
+                Movies exista o valor que está sendo digitado no campo movie_id da tabela Rating.
+    
+d) *Altere a tabela de filmes para que ela não tenha mais uma coluna chamada rating.*
+					describe Movies
+					ALTER TABLE Rating DROP COLUMN rate
+                    
+select * from Movies
+select * from Rating
+delete from Movies where id = "7"
+
+*e) Tente apagar um filme que possua avaliações. Anote e explique o resultado da query.*
+	É informado que existe uma falha de foregn key constraint (não pode apagar ou atualizar).
+    
+    
