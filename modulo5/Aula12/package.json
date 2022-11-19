@@ -1,0 +1,20 @@
+{
+  "name": "aula12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@types/knex": "^0.16.1",
+    "knex": "^2.3.0",
+    "mysql": "^2.18.1"
+  }
+}
